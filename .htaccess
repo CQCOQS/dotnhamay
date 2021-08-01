@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST}  !^www\.dotnhamay\.tk$ [NC]
+RewriteRule ^(.*) http://www.dotnhamay.tk/$1 [L,R]
