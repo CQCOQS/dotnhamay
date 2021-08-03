@@ -1,0 +1,39 @@
+<div style="margin: 0 auto; width: 500px;">
+	<h3 style="margin-bottom: 20px;"><span class="label label-primary">Nạp thẻ cào trực tuyến</span></h3>
+	<form action="index.php" method="post" id="fnapthe" name="fnapthe">
+		<input  type="hidden" name="fnapthe" value="ok"/>
+		<table class="table table-condensed table-bordered">
+			<tbody>                        
+				<tr>
+					<td>Loại thẻ</td>
+					<td>
+						<select name="card_type_id" style="width: 390px;border: 1px solid #ccc;height: 30px;">
+							<option value="1">Viettel</option>
+							<option value="2">Mobiphone</option>
+							<option value="3">Vinaphone</option>
+							<option value="4">Gate</option>
+							<option value="6">Vietnammobile</option>
+							<option value="7">Megacard</option>
+							<option value="8">OnCash</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Mã thẻ</td>
+					<td><input type="text" value="" name="pin" style="width: 390px;border: 1px solid #ccc;height: 30px;"/></td>
+				</tr>
+				<tr>
+					<td>Seri</td>
+					<td><input type="text" value="" name="seri" style="width: 390px;border: 1px solid #ccc;height: 30px;"/></td>
+				</tr>
+				
+			</tbody>
+		</table>
+		<center>
+			<input class="btn btn-primary" type="submit" value="Nạp thẻ"/> 
+			<div id="loading_napthe" style="display: none; float: center"> &nbsp;Xin mời chờ...</div><br>
+			<div class="label label-success" id="msg_success_napthe"></div><br>
+			<div class="label label-danger" id="msg_err_napthe"><?php echo $status; ?></div><br>
+		</center>
+	</form>
+</div>
