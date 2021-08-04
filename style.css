@@ -73,8 +73,14 @@ li.dropdown {
 .my-float{
 	margin-top:16px;
 }
-.ImageBorder2
+img
 {
     border-width: 10px;
     border-color: Black;
 }
+h4{
+ margin-border:50px;
+ border:solid;
+ text-align:center;
+}
+ 
